@@ -23,7 +23,6 @@ class TestMathGame(unittest.TestCase):
                 (8, 3, '-', '8 - 3', 5),
                 (4, 5, '*', '4 * 5',20)
             ]
-
             for num1, num2, operator, expected_problem, expected_answer in test_cases:
                 problem, answer =function_C(num1,num2,operator)
                 self.assertEqual(problem, expected_problem)
