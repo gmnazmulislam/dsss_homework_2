@@ -13,22 +13,15 @@ def generate_operator():
     return random.choice(['+', '-', '*'])
 
 def evaluate_problem(num1, num2, operator):
-    """
-    Evaluate the problem based on the provided numbers and operator
-    """
+    """ Evaluate the problem based on the provided numbers and operator """
     problem = f"{num1} {operator} {num2}"
-    if operator == '+': 
-        ans = num1 + num2
-    elif operator == '-': 
-        ans = num1 - num2
-    else:
-        ans = num1 * num2
+    if operator == '+': ans = num1 + num2
+    elif operator == '-': ans = num1 - num2
+    else: ans = num1 * num2
     return problem, ans
 
 def math_quiz():
-    """
-    A math quiz game where users have to answer arithmetic questions.
-    """
+    """ A math quiz game where users have to answer arithmetic questions. """
     score = 0
     total_questions = 3  # change float to integer as no of question can't be a fraction.
 
